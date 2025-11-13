@@ -85,10 +85,10 @@
          */
         function update() {
         positionX = positionX + speed;
-        if (positionX < boardWidth) {
+        if (positionX > boardWidth) {
           speed *= -1;
           }
-        if (positionX > 0 ) {
+        else if (positionX < 0 ) {
          speed *= -1;
           }
         
